@@ -6,7 +6,7 @@ import {Component,Input} from '@angular/core';
 })
 
 export class BodyLoginComponent{
-    userName:string="addsls";
+    userName:string;
     isLogin:boolean=false;
     @Input() login: Function; 
     
