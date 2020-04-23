@@ -2,11 +2,14 @@ import {Component} from '@angular/core';
 
 @Component({
   selector:'app-body',
-  templateUrl:'./body.component.html',
-  styles: ['div { background-color:lightyellow; }']
+  templateUrl:'./body.component.html'
 })
 
 export class BodyComponent{
-  username = 'YL';
+  username:string = 'YL';
+  isLogin:boolean=false;
+  login(){
+    this.isLogin =!this.isLogin;
+  }
  
 }

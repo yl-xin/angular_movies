@@ -1,5 +1,5 @@
 <div>
-    <app-body-login [userName]="username"></app-body-login>
-    <app-body-welcome [userName]="username" ></app-body-welcome>
-    <app-body-movies></app-body-movies>
+    <app-body-login *ngIf="!isLogin" [login]="login.bind(this)"></app-body-login>
+    <app-body-welcome *ngIf="isLogin" [userName]="username" ></app-body-welcome>
+    <app-body-movies *ngIf="isLogin"></app-body-movies>
 </div>
