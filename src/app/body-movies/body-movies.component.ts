@@ -4,6 +4,7 @@ import {BodyMoviesService} from './body-movies.service';
 @Component({
   selector:'app-body-movies',
   templateUrl:'./body-movies.component.html',
+  styleUrls:['./body-movies.component.css']
 })
 
 export class BodyMoviesComponent{

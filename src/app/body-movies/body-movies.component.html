@@ -1,19 +1,34 @@
-<div class="row text-center">
-    <div class="col-sm-6 col-md-4">
-        <div class="card">
-            <img [src]="movies[0].img" class="card-img-top" alt="...">
+<div class="container">
+
+
+<div class="row" >
+    <div class="col-lg-4 col-md-6" *ngFor="let movie of movies">
+        <div class="card my-2" >
             <div class="card-header">
-                Featured
+                <h5  class="card-title">{{movie.name}} </h5> 
+                <h6  class="card-subtitle mb-2 text-muted">{{movie.actor}}</h6>
             </div>
-            <div class="card-body">
-                <h5  class="card-title">{{movies[0].name}} </h5>
-                <h6  class="card-subtitle mb-2 text-muted">Actor: {{movies[0].actor}}</h6>
-                <p class="card-text">{{movies[0].description}}</p>
+            <div class="row no-gutters bg-dark">
+                <div class="col-6">
+                    <img [src]="movie.img" class="card-img movie" alt="...">
+                </div>
+                <div class="col-6 col-lg-6s ">
+                    <ul class=" list-group list-group-flu text-white">
+                        <li class="list-group-item bg-dark ">{{movie.rating}} <i class="fas fa-star"></i></li>
+                        <li class="list-group-item bg-dark">{{movie.category}} </li>
+                        <li class="list-group-item bg-dark" *ngIf="movie.award">Award:<img class="award" [src]="movie.award"></li>
+                    </ul>
+                    <div class="card-body ">
+                        <button type="button" class="btn btn-danger">More Info</button>
+                    </div>
+                </div>
             </div>
 
-            </div>
+        </div>
+
            
 
     </div>
     
+</div>
 </div>
