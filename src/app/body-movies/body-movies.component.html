@@ -1,3 +1,19 @@
-<div>
-    {{movies[0].name}}
+<div class="row text-center">
+    <div class="col-sm-6 col-md-4">
+        <div class="card">
+            <img [src]="movies[0].img" class="card-img-top" alt="...">
+            <div class="card-header">
+                Featured
+            </div>
+            <div class="card-body">
+                <h5  class="card-title">{{movies[0].name}} </h5>
+                <h6  class="card-subtitle mb-2 text-muted">Actor: {{movies[0].actor}}</h6>
+                <p class="card-text">{{movies[0].description}}</p>
+            </div>
+
+            </div>
+           
+
+    </div>
+    
 </div>

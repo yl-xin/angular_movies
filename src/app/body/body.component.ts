@@ -16,7 +16,7 @@ export class BodyComponent{
   }
 
   
-  isLogin:boolean=false;
+  isLogin:boolean=true;
   login(){
     this.isLogin =!this.isLogin;
     this.username=this.bodyLoginComponent.userName;
