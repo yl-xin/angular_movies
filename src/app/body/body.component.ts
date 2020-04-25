@@ -9,7 +9,7 @@ import {BodyLoginComponent} from '../body-login/body-login.component';
 
 export class BodyComponent{
   @ViewChild(BodyLoginComponent)bodyLoginComponent:BodyLoginComponent;
-  username:string;
+  username:string="";
   ngAfterViewInit(){
     // console.log(this.bodyLoginComponent);
     this.username=this.bodyLoginComponent.userName;
@@ -18,6 +18,9 @@ export class BodyComponent{
   login(){
     this.isLogin =!this.isLogin;
     this.username=this.bodyLoginComponent.userName;
+  }
+  logout(){
+    this.isLogin =!this.isLogin;
   }
  
 }

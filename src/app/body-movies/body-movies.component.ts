@@ -13,7 +13,7 @@ export class BodyMoviesComponent{
     // initiale movies by subscribe
     ngOnInit(){
         this.movieService.getMovies().subscribe(data=>{
-            console.log(data);
+            // console.log(data);
             this.movies=data});
     }
 
