@@ -9,9 +9,10 @@ import {FooterComponent} from './footer/footer.component';
 import {BodyLoginComponent} from './body-login/body-login.component';
 import {BodyWelcomeComponent} from './body-welcome/body-welcome.component';
 import {BodyMoviesComponent} from './body-movies/body-movies.component';
+import {BodyNavComponent} from './body-nav/body-nav.component';
 
 @NgModule({
-  declarations: [AppComponent,HeaderComponent,BodyComponent,FooterComponent,BodyLoginComponent,BodyWelcomeComponent,BodyMoviesComponent],
+  declarations: [AppComponent,HeaderComponent,BodyComponent,FooterComponent,BodyLoginComponent,BodyWelcomeComponent,BodyMoviesComponent,BodyNavComponent],
   imports: [
     BrowserModule,
     FormsModule,

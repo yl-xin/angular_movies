@@ -1,9 +1,9 @@
 <div class="container ">
     <div class="jumbotron">
-        <h1 class="display-4">Welcome {{userName}}!</h1>
+        <h3 class="display-4">Welcome {{userName}}!</h3>
         
         <hr class="my-4">
-        <p class="lead">This dynamic website recommends our hand-picked highly rated awesome movies! I hope you have some quality time with your family during social distancing by watching our hand-picked awesome movies.</p>
+        <p [innerHTML]="welcomeDetail" class="lead"></p>
       </div>
 
 </div>

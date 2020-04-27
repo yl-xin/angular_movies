@@ -1,5 +1,6 @@
 import {Component} from '@angular/core';
 import {BodyMoviesService} from './body-movies.service';
+import {IMovies} from './movies';
 
 @Component({
   selector:'app-body-movies',
@@ -8,7 +9,7 @@ import {BodyMoviesService} from './body-movies.service';
 })
 
 export class BodyMoviesComponent{
-    movies: any[];
+    movies: IMovies[];
     constructor(private movieService:BodyMoviesService){}
     // initiale movies by subscribe
     ngOnInit(){

@@ -3,7 +3,7 @@ import {BodyLoginComponent} from '../body-login/body-login.component';
 
 @Component({
   selector:'app-body',
-  templateUrl:'./body.component.html'
+  templateUrl:'./body.component.html',
 })
 
 
